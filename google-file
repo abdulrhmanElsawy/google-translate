@@ -1,0 +1,18 @@
+Put this where ever you want in your code (Should be in the navbar file )
+
+                                <div id="google_translate_element"></div>
+
+
+Then use this script for example if you are using react put in the public -> index.html
+
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,es,de,ru,fr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
